@@ -15,14 +15,13 @@ import time
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
 
-def countingSort(arr):
 
-    int_array = (max(arr) + 1)  * [0]
+def countingSort(arr):
+    int_array = [0] * 100
     for n in arr:
         int_array[n] += 1
 
-    return len(int_array)
-    # Write your code here
+    return int_array
 
 if __name__ == '__main__':
 
