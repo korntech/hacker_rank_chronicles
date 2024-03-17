@@ -6,6 +6,7 @@ import random
 import re
 import sys
 
+# https://www.hackerrank.com/challenges/big-sorting/problem
 #
 # Complete the 'bigSorting' function below.
 #
@@ -15,7 +16,11 @@ import sys
 sys.set_int_max_str_digits(1000000)
 def bigSorting(unsorted):
     # Write your code here
-    
+
+    s = map(bin, list(map(int, unsorted)))
+
+    s = sorted(map(int, unsorted))
+
     new = []
     for item in unsorted:
         new.append((item, len(item)))
