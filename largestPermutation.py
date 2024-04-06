@@ -5,6 +5,7 @@ import os
 import random
 import re
 import sys
+
 #
 # Complete the 'largestPermutation' function below.
 #
@@ -13,7 +14,7 @@ import sys
 #  1. INTEGER k
 #  2. INTEGER_ARRAY arr
 #
-from time import sleep
+# https://www.hackerrank.com/challenges/largest-permutation/problem?isFullScreen=true
 
 
 def largestPermutation(k, arr):
@@ -29,7 +30,6 @@ def largestPermutation(k, arr):
         if c < k:
             if tup[0] > tup[1]:
                 ind = my_dict[tup[0]]
-    
                 arr[i], arr[ind] = tup[0], tup[1]
                 c += 1
                 my_dict[tup[0]], my_dict[tup[1]] = i, ind

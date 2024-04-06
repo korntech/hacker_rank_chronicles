@@ -30,6 +30,7 @@ def decentNumber(n):
                 print(n * '5' + val * '3')
                 return
             val += 1
+        print(-1)
     elif not n % 5: 
         print(n * '3')
     else:
