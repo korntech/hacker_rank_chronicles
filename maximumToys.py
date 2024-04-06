@@ -20,11 +20,10 @@ def maximumToys(prices, k):
     prices.sort()
     count = 0 
     spent = 0
-    for i in range(len(prices)-1):
-        if spent < k and spent + prices[i] < k:
+    for i in range(len(prices)):
+        if  spent + prices[i] <= k:
             spent += prices[i]
             count += 1
-
         else:
             break
 
